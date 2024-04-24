@@ -1,4 +1,4 @@
-package com.ese.spring.login.controllers;
+package com.ese.spring.controllers;
 
 import java.util.HashSet;
 import java.util.List;
@@ -22,9 +22,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ese.spring.login.models.ERole;
-import com.ese.spring.login.models.Role;
-import com.ese.spring.login.models.User;
 import com.ese.spring.login.payload.request.LoginRequest;
 import com.ese.spring.login.payload.request.SignupRequest;
 import com.ese.spring.login.payload.response.MessageResponse;
@@ -32,7 +29,10 @@ import com.ese.spring.login.payload.response.UserInfoResponse;
 import com.ese.spring.login.repository.RoleRepository;
 import com.ese.spring.login.repository.UserRepository;
 import com.ese.spring.login.security.jwt.JwtUtils;
-import com.ese.spring.login.security.services.UserDetailsImpl;
+import com.ese.spring.models.ERole;
+import com.ese.spring.models.Role;
+import com.ese.spring.models.User;
+import com.ese.spring.services.UserDetailsImpl;
 
 //for Angular Client (withCredentials)
 //@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600, allowCredentials="true")

@@ -1,4 +1,4 @@
-package com.ese.spring.login.models;
+package com.ese.spring.models;
 
 import java.util.HashSet;
 import java.util.Set;
